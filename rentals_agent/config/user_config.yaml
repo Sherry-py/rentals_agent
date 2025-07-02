@@ -1,0 +1,19 @@
+# User preferences configuration
+budget:
+  min: 700
+  max: 850
+location:
+  preferred_areas:
+    - Rosebery
+    - Kensington
+  max_walk_time_minutes: 20
+  max_drive_time_minutes: 20
+furniture:
+  required: true
+  min_quality: good
+air_conditioning: true
+noise_level: quiet
+balcony: preferred
+move_in_date: 2025-09-01
+agent_reliability_threshold: 7
+single_occupancy_required: true
