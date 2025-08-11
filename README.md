@@ -1,86 +1,44 @@
-🏠 rentals_agent
+# Rentals Agent - Australian Property Sales and Climate Data Integration
 
-🚀 A practical, learning-oriented project to practice Python end-to-end development while helping find a suitable apartment in Sydney for September move-in.
+## Project Overview
 
-⸻
+This project aims to combine Australian property sales data across multiple cities with climate data to build an intelligent filtering and recommendation system based on regional climate preferences and property features.  
+At this stage, the project focuses on offline historical data cleaning, preprocessing, and integration, laying the groundwork for future real-time data acquisition and advanced recommendation algorithms.
 
-🎯 Project Purpose
+## Project Components
 
-✅ Skill Development:
-	•	Practice scraping (requests, Playwright), pandas data handling, visualization (matplotlib/plotly), and project structuring in PyCharm + Trae.
-	•	Build the habit of independent vibe coding with real-life projects.
+- **Property Sales Data:** Historical Australian property listings including price, bedrooms, bathrooms, address, and other key attributes.  
+- **Climate Data:** Publicly available Australian weather data containing temperature, rainfall, wind, humidity, and other meteorological information.  
+- **Data Processing:** Cleaning, handling missing values, and standardizing formats for both datasets.  
+- **Data Matching:** Linking climate data and property data by city/location to enable climate-aware property filtering.  
+- **Example Scripts:** Demonstration scripts implementing basic city-based filtering and price missing value handling.
 
-✅ Practical Goal:
-	•	Actively assist in renting an apartment in Sydney, ensuring data-driven price comparison and effective decision-making while maintaining flexibility.
+## Current Progress
 
-⸻
+- Completed cleaning and preprocessing of Australian property sales data.  
+- Cleaned and structured climate datasets.  
+- Implemented filtering of properties by city and removal of listings with missing prices.  
+- Provided example outputs demonstrating matched filtered properties.
 
-🚩 Project Strategy
+## Future Plans
 
-After encountering API and anti-scraping limitations on major platforms, we refined our approach:
+- Incorporate real-time property listing data acquisition and updates.  
+- Expand filtering criteria to include multiple climate attributes and personalized user preferences.  
+- Develop an interactive user interface for property search and visualization.  
+- Explore deployment of the system on cloud platforms for scalable access.
 
-✅ Targeted, low-frequency scraping of 5–8 key suburbs only (Kingsford, Kensington, Randwick, Waterloo, Zetland, Rosebery, etc.).
-✅ Combine manual collection (Facebook Marketplace, WeChat groups) for accurate, up-to-date listings.
-✅ Store and manage listings in Airtable/Notion for easy tracking and comparison.
-✅ Weekly routine: scrape → update database → analyze → schedule inspections.
+## Environment Requirements
 
-This ensures the project maximizes both learning value and practical effectiveness in finding a rental property.
+- Python 3.8+  
+- Dependencies: pandas (and related libraries)
 
-⸻
+## Usage
 
-🗓️ Project Progress Structure
+1. Clone the repository.  
+2. Prepare Australian property sales and climate CSV datasets in designated directories.  
+3. Run data cleaning scripts to preprocess the datasets.  
+4. Execute filtering scripts to perform example property recommendations.
 
-To maintain focus and consistency:
+---
 
-Day 1:
-	•	Identify target suburbs + price ranges.
-	•	Create Airtable/Notion database structure.
-	•	Set up Playwright scraping environment and test grabbing top 5 listings.
-	•	Generate demo suburb price distribution plot.
-
-Day 2:
-	•	Refine scraping fields (title, price, address, bedrooms, link) and storage pipeline.
-	•	Improve visualization clarity.
-	•	Push initial functional version to GitHub.
-
-Day 3:
-	•	Supplement data with Facebook/WeChat manual collection.
-	•	Validate data accuracy by comparing with live platforms.
-	•	Create simple scoring logic for properties.
-
-Day 4:
-	•	Generate comparative graphs and average price tables.
-	•	Prepare automated email inquiry templates with ChatGPT.
-	•	Plan weekend inspection scheduling.
-
-Day 5:
-	•	Send out initial inquiries and track response status.
-	•	Run complete scraping pipeline, validating stability.
-
-Day 6:
-	•	Add error handling and logging for scraping failures.
-	•	Experiment with Airtable API auto-sync.
-	•	Output weekly scrape summary visuals.
-
-Day 7:
-	•	Conduct or schedule viewings.
-	•	Compare options for time, location, and price.
-	•	Document weekly progress and plan next iterations.
-
-⸻
-
-📊 Features Planned
-
-✅ Playwright-based targeted scraping of Sydney rental listings (top 5 per suburb).
-✅ Data cleaning and pandas-based structuring.
-✅ Price distribution visualization for key suburbs.
-✅ Airtable/Notion management for rental pipeline.
-✅ Weekly inspection planning support.
-✅ ChatGPT-assisted inquiry and negotiation template generation.
-
-⸻
-
-🌿 Future Extensions
-	•	Adapt this pipeline for supermarket price monitoring, flight/visa booking monitoring, or application tracking.
-	•	Integrate with Telegram/Discord bot for push notifications.
-	•	Expand into an AI-assisted rental agent system
+Contributions and feedback are welcome!
